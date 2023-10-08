@@ -162,6 +162,7 @@ footer{
 #sum2{
     grid-area: sum2;
     margin-top: 8px;
+    margin-bottom: 10px;
     margin-right: -60px;
 }
 .t04 h4{
