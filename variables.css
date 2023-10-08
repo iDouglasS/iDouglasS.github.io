@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Oswald:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@600&family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@font-face {
+    font-family: emerland;
+    src: url(Fonts/emerland/emerland.ttf);
+}
+
+:root{
+    --main-font: 'Roboto', sans-serif;
+    --header-font: 'Oswald', sans-serif;
+    --title-fonts: 'Bebas Neue', 'sans-serif';
+    --bgcolor: rgba(255, 255, 255, 0.611);
+    --boxshadow: 0 0 15px #131212de;
+}

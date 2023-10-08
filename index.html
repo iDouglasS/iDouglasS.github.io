@@ -1,26 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DESENVOLVIMENTO WEB</title>
-    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <title>CSS 3D Rotating Image</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet"  type="text/CSS" href="style.css">
+    <link rel="stylesheet" href="efeitoimg.css">
+    <link rel="stylesheet" href="variables.css">
 </head>
-<body>
+<header class="header">
     <h1>
+        Douglas Silva Santana
+    </h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="sobremim.html"> Sobre mim</a></li>
+            <li><a href="contato.html"> Contatos</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="imgroda">
+    <div class="efeito">
+        <span style="--i:1;"><img src="IMG/efeitoimg/chatgpt.jpeg" alt="#"></span>
+        <span style="--i:2;"><img src="IMG/efeitoimg/CSS.jpg" alt="#"></span>
+        <span style="--i:3;"><img src="IMG/efeitoimg/github.jpeg" alt="#"></span>
+        <span style="--i:4;"><img src="IMG/efeitoimg/HTML5.png" alt="#"></span>
+        <span style="--i:5;"><img src="IMG/efeitoimg/netlify-logo.jpeg" alt="#"></span>
+        <span style="--i:6;"><img src="IMG/efeitoimg/JAVASCRIPT.png" alt="#"></span>
+        <span style="--i:7;"><img src="IMG/efeitoimg/versel.jpeg" alt="#"></span>     
+      </div >
+</div>
+<body>
+    <h1 class="maintitle">
         Desenvolvimento Web
     </h1>
-    <h2>
-        Douglas Santana
-    </h2>
-        <h3>
-            <a href="contato.html">Meus contatos</a> / <a href="sobremim.html">Sobre mim</a>
-        </h3>
-    <article>
-        <h3>
-            Sumário:
-        </h3>
-        <ul>
+    <article class="sumario">
+        <ul id="sum1">
             <li><a href="#titulo01">Introdução:</a></li>
             <li><a href="#titulo02">O que é desenvolvimento web?</a></li>
             <li><a href="#titulo03">O que faz um desenvolvedor web?</a></li>
@@ -31,244 +47,255 @@
             <li><a href="#titulo08">Top 3 principais opções gratuitas para hospedagem de sites estáticos.</a></li>
             <li><a href="#titulo09">Algumas dicas de como iniciar a sua carreira de desenvolmimento web:</a></li>
     </ul>
+    <img id="sum2" src="IMG/web.webp" alt="">
     </article>
-    <article>
-        <h3 id="titulo01">
-            Introdução:
-        </h3>
-        <p>
-            Se você está interessado em aprender sobre o emocionante campo do desenvolvimento web, você veio ao lugar certo. Nossa página é dedicada a fornecer informações abrangentes, recursos valiosos e insights práticos sobre tudo relacionado ao desenvolvimento web. 
-        </p>
-        <p>
-            Seja você um novato curioso ou um profissional experiente, aqui você encontrará conteúdo que irá enriquecer seu conhecimento e aprimorar suas habilidades.
-        </p>
-    </article>
-    <article>
-        <h3 id="titulo02">
-            O que é desenvolvimento web?
-        </h3>
-        <p>
-            O desenvolvimento web abrange o processo de criação, construção e manutenção de sites e aplicativos para a internet. Isso envolve uma variedade de tecnologias, linguagens de programação e abordagens de design para criar experiências digitais atraentes e funcionais para os seus usuários.
-        </p>
-    </article>
-    <article>
-        <h3 id="titulo03">
-            O que faz um desenvolvedor web?
-        </h3>
-        <p>
-            Um desenvolvedor web é um profissional responsável por criar e manter sites e aplicativos para a internet. Eles são essenciais para transformar ideias e designs em realidade digital, permitindo que as empresas e indivíduos alcancem seus públicos online.
-        </p>
-        <p>
-            As responsabilidades de um desenvolvedor web podem variar dependendo do estágio do projeto, da equipe com a qual trabalham e das tecnologias que utilizam.
-        </p>
-    </article>
-    <article>
-        <h3 id="titulo04">
-            O que significa Front-End e Back-End?
-        </h3>
-        <h4>
-            Front-End:
-        </h4>
-        <p>
-            O termo "front-end" se refere à parte visível e interativa de um site ou aplicativo que os usuários finais podem ver e com a qual podem interagir diretamente. O front-end lida com a interface do usuário, ou seja, a forma como o conteúdo é apresentado e como os usuários podem interagir com ele.
-        </p>
-        <h5>
-            Isso inclui elementos como:
-        </h5> 
-        <ul>
-            <li>Layout</li>
-            <li>Design</li> 
-            <li>Cores</li> 
-            <li>Tipografia</li> 
-            <li>Imagens</li> 
-            <li>Botões e todos os aspectos visíveis do site</li>
-        </ul>
-        <h5>
-            Tecnologias usadas no front-end:
-        </h5>
-            <ul>
-                <li>HTML (Hypertext Markup Language): Responsável pela estrutura e marcação do conteúdo.</li>
-                <li>CSS (Cascading Style Sheets): Utilizado para estilizar e formatar o layout e a aparência.</li>
-                <li>JavaScript: Responsável pela interatividade e dinâmica, como animações e manipulação do conteúdo em tempo real.</li>
-            </ul>
-        <h4>
-            Back-End:
-        </h4>
-        <p>
-            O termo "back-end" refere-se à parte não visível de um site ou aplicativo, que lida com a lógica do servidor, o processamento dos dados e as operações que ocorrem nos bastidores. O back-end é responsável por armazenar, processar e fornecer informações para o front-end, permitindo que o aplicativo funcione corretamente.
-        </p>
-            <h5>
-                Tecnologias usadas no back-end:
-            </h5>
-            <ul>
-                <li>Linguagens de Programação Server-Side: Python, Ruby, PHP, Node.js, Java, C#, entre outras.</li>
-                <li>Bancos de Dados: Usados para armazenar e gerenciar dados, como MySQL, PostgreSQL, MongoDB, entre outros.</li>
-                <li>Frameworks e Bibliotecas: Conjuntos de ferramentas pré-construídas para facilitar o desenvolvimento, como Express.js para Node.js ou Django para Python.</li>
-            </ul>
-        <p>
-            Desenvolvedores back-end se concentram em construir a lógica do aplicativo, manipular dados, gerenciar autenticação e segurança, além de lidar com tarefas de armazenamento e recuperação de informações.
-        
-            Geralmente, um site ou aplicativo web é uma combinação de front-end e back-end, trabalhando juntos para fornecer uma experiência completa aos usuários.
-        </p>
-        <p>
-            A colaboração entre desenvolvedores front-end e back-end é crucial para garantir que o aplicativo seja funcional, seguro, eficiente e visualmente agradável.
-        </p>
+    <section class="main">
+        <article class="t01">
+            <h2 id="titulo01">
+                Introdução:
+            </h2>
+            <p>
+                Se você está interessado em aprender sobre o emocionante campo do desenvolvimento web, você veio ao lugar certo. Nossa página é dedicada a fornecer informações abrangentes, recursos valiosos e insights práticos sobre tudo relacionado ao desenvolvimento web.
+            </p>
+            <p>
+                Seja você um novato curioso ou um profissional experiente, aqui você encontrará conteúdo que irá enriquecer seu conhecimento e aprimorar suas habilidades.
+            </p>
+            
         </article>
-        <article>
-        <h3 id="titulo05">
-            O que é desenvolvimento web full stack?
-        </h3>
-        <p>
-            O desenvolvimento web full stack refere-se à capacidade de um desenvolvedor criar e gerenciar tanto o front-end quanto o back-end de um aplicativo ou site, é também alguém que possui conhecimento e habilidades para trabalhar em todas as camadas de um projeto de desenvolvimento web, desde a interface do usuário até o servidor, banco de dados e lógica de negócios.
-        </p>
-        <p>
-            Um desenvolvedor full stack é capaz de lidar com todas as etapas do desenvolvimento de software, desde a concepção e design do front-end até a implementação e manutenção do back-end.
-        </p>
-        <p>
-            Eles são versáteis e têm uma compreensão profunda de várias tecnologias e linguagens de programação, permitindo-lhes criar aplicativos web completos de ponta a ponta.
-        </p>
-    </article>
-    <article>
-        <h3 id="titulo06">
-            Principais tecnologias de desenvolvimento web:
-        </h3>
-        <h4>
-            HTML:
-        </h4>
-        <p>
-            O HTML, ou Hypertext Markup Language, é uma linguagem de marcação usada para estruturar e apresentar o conteúdo em páginas web. Ele desempenha um papel fundamental na criação de elementos como textos, imagens, links e outros recursos visuais, permitindo que os desenvolvedores construam a estrutura básica de um site.
-        </p>
-        <h4>
-            CSS:
-        </h4>
-        <p>
-            O CSS (Cascading Style Sheets) é uma linguagem usada para estilizar páginas web, dando a elas aparência visual e layout. Ele funciona junto com o HTML para controlar como o conteúdo é exibido.
-        </p>
-        <p>
-            É crucial para criar sites visualmente atraentes e funcionais, combinado com HTML e, muitas vezes, JavaScript, permite a criação de experiências web interativas e responsivas.
-        </p>
-        <h4>
-            JavaScript:
-        </h4>
-        <p>
-            JavaScript é uma linguagem de programação usada principalmente para adicionar interatividade e dinamismo a páginas web. Ele permite que os desenvolvedores criem elementos interativos e reativos, tornando a experiência do usuário mais envolvente.
-        </p>
-        <p>
-            Esta linguagem é amplamente utilizada para criar aplicativos web modernos, jogos, aplicativos móveis híbridos e muito mais. Sua versatilidade e capacidade de melhorar a experiência do usuário tornam-na indispensável para grande parte dos desenvolvedores web.
-        </p>
-    </article>
-    <article>
-        <h3 id="titulo07">
-            Top 3 melhores editores de códigos:
-        </h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ysEN5RaKOlA?si=QeGrEatREtwkeMFZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <article class="t02">
+            <h2 id="titulo02">
+                O que é desenvolvimento web?
+            </h2>
+            <p>
+                O desenvolvimento web abrange o processo de criação, construção e manutenção de sites e aplicativos para a internet. Isso envolve uma variedade de tecnologias, linguagens de programação e abordagens de design para criar experiências digitais atraentes e funcionais para os seus usuários.
+            </p>
+        </article>
+        <article class="t03">
+            <h2 id="titulo03">
+                O que faz um desenvolvedor web?
+            </h2>
+            <p>
+                Um desenvolvedor web é um profissional responsável por criar e manter sites e aplicativos para a internet. Eles são essenciais para transformar ideias e designs em realidade digital, permitindo que as empresas e indivíduos alcancem seus públicos online.
+            </p>
+            <p>
+                As responsabilidades de um desenvolvedor web podem variar dependendo do estágio do projeto, da equipe com a qual trabalham e das tecnologias que utilizam.
+            </p>
+        </article>
+        <article class="t04">
+            <h2 id="titulo04">
+                O que significa Front-End e Back-End?
+            </h2>
+            <h3>
+                Front-End:
+            </h3>
+            <p>
+                O termo "front-end" se refere à parte visível e interativa de um site ou aplicativo que os usuários finais podem ver e com a qual podem interagir diretamente. O front-end lida com a interface do usuário, ou seja, a forma como o conteúdo é apresentado e como os usuários podem interagir com ele.
+            </p>
+            <h4>
+                Isso inclui elementos como:
+            </h4>
+            <ul>
+                <li>Layout</li>
+                <li>Design</li>
+                <li>Cores</li>
+                <li>Tipografia</li>
+                <li>Imagens</li>
+                <li>Botões e todos os aspectos visíveis do site</li>
+            </ul>
+            <h4>
+                Tecnologias usadas no front-end:
+            </h4>
+                <ul>
+                    <li>HTML (Hypertext Markup Language): Responsável pela estrutura e marcação do conteúdo.</li>
+                    <li>CSS (Cascading Style Sheets): Utilizado para estilizar e formatar o layout e a aparência.</li>
+                    <li>JavaScript: Responsável pela interatividade e dinâmica, como animações e manipulação do conteúdo em tempo real.</li>
+                </ul>
+                <div class="imgfront">
+                    <img id="pic01" src="IMG/frontend.png" alt=""> 
+                    <img src="IMG/frontend02.jpg" alt="">
+                </div>
+            <h3>
+                Back-End:
+            </h3>
+            <p>
+                O termo "back-end" refere-se à parte não visível de um site ou aplicativo, que lida com a lógica do servidor, o processamento dos dados e as operações que ocorrem nos bastidores. O back-end é responsável por armazenar, processar e fornecer informações para o front-end, permitindo que o aplicativo funcione corretamente.
+            </p>
+                <h4>
+                    Tecnologias usadas no back-end:
+                </h4>
+                <ul>
+                    <li>Linguagens de Programação Server-Side: Python, Ruby, PHP, Node.js, Java, C#, entre outras.</li>
+                    <li>Bancos de Dados: Usados para armazenar e gerenciar dados, como MySQL, PostgreSQL, MongoDB, entre outros.</li>
+                    <li>Frameworks e Bibliotecas: Conjuntos de ferramentas pré-construídas para facilitar o desenvolvimento, como Express.js para Node.js ou Django para Python.</li>
+                </ul>
+            <p>
+                Desenvolvedores back-end se concentram em construir a lógica do aplicativo, manipular dados, gerenciar autenticação e segurança, além de lidar com tarefas de armazenamento e recuperação de informações.
+        
+                Geralmente, um site ou aplicativo web é uma combinação de front-end e back-end, trabalhando juntos para fornecer uma experiência completa aos usuários.
+            </p>
+            <p>
+                A colaboração entre desenvolvedores front-end e back-end é crucial para garantir que o aplicativo seja funcional, seguro, eficiente e visualmente agradável.
+            </p>
+            <div class="imgback">
+                <img id="img1" src="IMG/backend.png" alt=""> <img id="img2" src="IMG/backend02.jpg" alt="">
+            </div>
+            </article>
+            <article class="t05">
+            <h2 id="titulo05">
+                O que é desenvolvimento web full stack?
+            </h2>
+            <p>
+                O desenvolvimento web full stack refere-se à capacidade de um desenvolvedor criar e gerenciar tanto o front-end quanto o back-end de um aplicativo ou site, é também alguém que possui conhecimento e habilidades para trabalhar em todas as camadas de um projeto de desenvolvimento web, desde a interface do usuário até o servidor, banco de dados e lógica de negócios.
+            </p>
+            <p>
+                Um desenvolvedor full stack é capaz de lidar com todas as etapas do desenvolvimento de software, desde a concepção e design do front-end até a implementação e manutenção do back-end.
+            </p>
+            <p>
+                Eles são versáteis e têm uma compreensão profunda de várias tecnologias e linguagens de programação, permitindo-lhes criar aplicativos web completos de ponta a ponta.
+            </p>
+        </article>
+        <article class="t06">
+            <h2 id="titulo06">
+                Principais tecnologias de desenvolvimento web:
+            </h2>
+            <h3>
+                HTML:
+            </h3>
+            <p>
+                O HTML, ou Hypertext Markup Language, é uma linguagem de marcação usada para estruturar e apresentar o conteúdo em páginas web. Ele desempenha um papel fundamental na criação de elementos como textos, imagens, links e outros recursos visuais, permitindo que os desenvolvedores construam a estrutura básica de um site.
+            </p>
+            <h3>
+                CSS:
+            </h3>
+            <p>
+                O CSS (Cascading Style Sheets) é uma linguagem usada para estilizar páginas web, dando a elas aparência visual e layout. Ele funciona junto com o HTML para controlar como o conteúdo é exibido.
+            </p>
+            <p>
+                É crucial para criar sites visualmente atraentes e funcionais, combinado com HTML e, muitas vezes, JavaScript, permite a criação de experiências web interativas e responsivas.
+            </p>
+            <h3>
+                JavaScript:
+            </h3>
+            <p>
+                JavaScript é uma linguagem de programação usada principalmente para adicionar interatividade e dinamismo a páginas web. Ele permite que os desenvolvedores criem elementos interativos e reativos, tornando a experiência do usuário mais envolvente.
+            </p>
+            <p>
+                Esta linguagem é amplamente utilizada para criar aplicativos web modernos, jogos, aplicativos móveis híbridos e muito mais. Sua versatilidade e capacidade de melhorar a experiência do usuário tornam-na indispensável para grande parte dos desenvolvedores web.
+            </p>
+        </article>
+        <article class="t07">
+            <h2 id="titulo07">
+                Top 3 melhores editores de códigos:
+            </h2>
+                <ol>
+                    <li>Visual Studio Code (VSCode): <a href="https://code.visualstudio.com/" target="_blank" rel="external">Link para instalação</a>
+                    </li>
+                </ol>
+                <p>
+                    Desenvolvido pela Microsoft, o VSCode é um editor de código gratuito, altamente personalizável e rico em recursos.
+                </p>
+                <p>
+                    Ele suporta uma ampla variedade de linguagens de programação, possui extensões poderosas para melhorar o fluxo de trabalho e integração profunda com Git.
+                </p>
+                <ol>
+                    <li value="2">Sublime Text: <a href="https://www.sublimetext.com/3" target="_blank" rel="external">Link para instalação</a></li>
+                </ol>
+                <p>
+                    Um editor de código leve, rápido e altamente customizável, com uma interface elegante. Ele possui recursos como pesquisa e substituição avançada, atalhos de teclado personalizáveis e suporte a múltiplas seleções.
+                </p>
+                <ol>
+                    <li value="3">WebStorm: <a href="https://www.jetbrains.com/pt-br/webstorm/download/#section=windows" target="_blank" rel="external">Link para instalação</a></li>
+                </ol>
+                <p>
+                    Desenvolvido pela JetBrains, o WebStorm é um IDE (Ambiente de Desenvolvimento Integrado) voltado para desenvolvimento web. Ele oferece recursos avançados para JavaScript, TypeScript, HTML, CSS e muito mais.
+                </p>
+        </article>
+        <article class="t08">
+            <h2 id="titulo08">
+                Top 3 principais opções gratuitas para hospedagem de sites estáticos.
+            </h2>
             <ol>
-                <li>Visual Studio Code (VSCode): <a href="https://code.visualstudio.com/" target="_blank" rel="external">Link para instalação</a>
-                </li>
+                <li>GitHub Pages:</li>
             </ol>
             <p>
-                Desenvolvido pela Microsoft, o VSCode é um editor de código gratuito, altamente personalizável e rico em recursos.
-            </p>
-            <p>
-                Ele suporta uma ampla variedade de linguagens de programação, possui extensões poderosas para melhorar o fluxo de trabalho e integração profunda com Git.
+                    Uma das opções mais populares, o GitHub Pages permite hospedar sites estáticos diretamente a partir de repositórios do GitHub. Ele suporta domínios personalizados e é especialmente adequado para projetos de código aberto.
             </p>
             <ol>
-                <li value="2">Sublime Text: <a href="https://www.sublimetext.com/3" target="_blank" rel="external">Link para instalação</a></li>
+                <li value="2">Netlify:</li>
             </ol>
             <p>
-                Um editor de código leve, rápido e altamente customizável, com uma interface elegante. Ele possui recursos como pesquisa e substituição avançada, atalhos de teclado personalizáveis e suporte a múltiplas seleções.
+                    Uma plataforma de hospedagem que oferece hospedagem de sites estáticos com integração contínua. Ele fornece recursos como redirecionamentos, formulários e gerenciamento de domínio.
             </p>
             <ol>
-                <li value="3">WebStorm: <a href="https://www.jetbrains.com/pt-br/webstorm/download/#section=windows" target="_blank" rel="external">Link para instalação</a></li>
+                <li value="3">Vercel:</li>
             </ol>
             <p>
-                Desenvolvido pela JetBrains, o WebStorm é um IDE (Ambiente de Desenvolvimento Integrado) voltado para desenvolvimento web. Ele oferece recursos avançados para JavaScript, TypeScript, HTML, CSS e muito mais.
+                    Anteriormente conhecido como Zeit, o Vercel oferece hospedagem rápida e escalável para aplicativos web e sites estáticos. Ele possui integração contínua, recursos de cache avançados e suporte a domínios personalizados.
             </p>
-    </article>
-    <article>
-        <h3 id="titulo08">
-            Top 3 principais opções gratuitas para hospedagem de sites estáticos.
-        </h3>
-        <ol>
-            <li>GitHub Pages:</li>
-        </ol>
-        <p>
-                Uma das opções mais populares, o GitHub Pages permite hospedar sites estáticos diretamente a partir de repositórios do GitHub. Ele suporta domínios personalizados e é especialmente adequado para projetos de código aberto.
-        </p>      
-        <ol>
-            <li value="2">Netlify:</li> 
-        </ol>   
-        <p>
-                Uma plataforma de hospedagem que oferece hospedagem de sites estáticos com integração contínua. Ele fornece recursos como redirecionamentos, formulários e gerenciamento de domínio.
-        </p>     
-        <ol>
-            <li value="3">Vercel:</li> 
-        </ol>     
-        <p>
-                Anteriormente conhecido como Zeit, o Vercel oferece hospedagem rápida e escalável para aplicativos web e sites estáticos. Ele possui integração contínua, recursos de cache avançados e suporte a domínios personalizados.
-        </p>
-    </article>
-    <article>
-        <h3 id="titulo09">
-            Algumas dicas de como iniciar a sua carreira de desenvolmimento web:
-        </h3>
-        <p>
-            Comece com os conceitos básicos, como HTML, CSS e JavaScript. Essas são as bases do desenvolvimento web e são essenciais para construir sites e aplicativos.
-        </p>
-        <ul>
-            <li>Escolha uma Especialização:</li>
-        </ul>
-        <p>
-            O desenvolvimento web tem várias áreas, como front-end, back-end e desenvolvimento full stack. Escolha a área que mais lhe interessa e concentre-se em aprimorar suas habilidades nessa direção.
-        </p>
-        <ul>
-            <li>Cursos e Recursos Online:</li>
-        </ul>
-        <p>
-            Utilize plataformas de aprendizado online, como Udemy, Coursera e Codecademy, para cursos e tutoriais. Eles podem fornecer uma base sólida e estruturada para o seu aprendizado.
-        </p>
-        <ul>
-            <li>Projetos Práticos:</li>
-        </ul>
-        <p>
-            Aplique o que aprendeu em projetos práticos. Crie sites simples, portfólios ou aplicativos pessoais para ganhar experiência real.
-        </p>
-        <ul>
-            <li>Mantenha-se Atualizado:</li>
-        </ul>
-        <p>
-            O desenvolvimento web é um campo em constante evolução. Fique atualizado com as tendências, novas tecnologias e práticas recomendadas.
-        </p>
-        <ul>
-            <li>Resolva Problemas:</li>
-        </ul>
-        <p>
-            A habilidade de solucionar problemas é fundamental. Enfrente desafios de programação, depure problemas e desenvolva a capacidade de encontrar soluções.
-        </p>
-        <ul>
-            <li>Estágios e Trabalhos Freelance:</li>
-        </ul>
-        <p>
-            Considere oportunidades de estágio, estágios de verão ou projetos freelance para ganhar experiência no mundo real.
-        </p>
-        <ul>
-            <li>Educação Contínua:</li>
-        </ul>
-        <p>
-            Aprender é um processo contínuo, mantenha-se disposto a aprender novas tecnologias e a aprimorar suas habilidades. <br>
-            Lembre-se de que a jornada de aprendizado e desenvolvimento é única para cada pessoa. Comece com paixão, paciência e perseverança, e com o tempo você poderá construir uma carreira sólida no desenvolvimento web.
-        </p>
-    </article>
-    <article>
-        <h3>
-            Atenção
-        </h3>
-        <p>
-            Todas as informações presentes nesse site foram extraídas do CHAT GPT, fui o responsável somente pela edição e adaptação dos conteúdos aqui presentes.
-        </p>
-    </article>
-    <footer>
-        Douglas Santana / Página criada em 2023 <br> Última atualização - 31/08/2023
-    </footer>
-
+        </article>
+        <article class="t09">
+            <h2 id="titulo09">
+                Algumas dicas de como iniciar a sua carreira de desenvolmimento web:
+            </h2>
+            <p>
+                Comece com os conceitos básicos, como HTML, CSS e JavaScript. Essas são as bases do desenvolvimento web e são essenciais para construir sites e aplicativos.
+            </p>
+            <ul>
+                <li>Escolha uma Especialização:</li>
+            </ul>
+            <p>
+                O desenvolvimento web tem várias áreas, como front-end, back-end e desenvolvimento full stack. Escolha a área que mais lhe interessa e concentre-se em aprimorar suas habilidades nessa direção.
+            </p>
+            <ul>
+                <li>Cursos e Recursos Online:</li>
+            </ul>
+            <p>
+                Utilize plataformas de aprendizado online, como Udemy, Coursera e Codecademy, para cursos e tutoriais. Eles podem fornecer uma base sólida e estruturada para o seu aprendizado.
+            </p>
+            <ul>
+                <li>Projetos Práticos:</li>
+            </ul>
+            <p>
+                Aplique o que aprendeu em projetos práticos. Crie sites simples, portfólios ou aplicativos pessoais para ganhar experiência real.
+            </p>
+            <ul>
+                <li>Mantenha-se Atualizado:</li>
+            </ul>
+            <p>
+                O desenvolvimento web é um campo em constante evolução. Fique atualizado com as tendências, novas tecnologias e práticas recomendadas.
+            </p>
+            <ul>
+                <li>Resolva Problemas:</li>
+            </ul>
+            <p>
+                A habilidade de solucionar problemas é fundamental. Enfrente desafios de programação, depure problemas e desenvolva a capacidade de encontrar soluções.
+            </p>
+            <ul>
+                <li>Estágios e Trabalhos Freelance:</li>
+            </ul>
+            <p>
+                Considere oportunidades de estágio, estágios de verão ou projetos freelance para ganhar experiência no mundo real.
+            </p>
+            <ul>
+                <li>Educação Contínua:</li>
+            </ul>
+            <p>
+                Aprender é um processo contínuo, mantenha-se disposto a aprender novas tecnologias e a aprimorar suas habilidades. <br>
+                Lembre-se de que a jornada de aprendizado e desenvolvimento é única para cada pessoa. Comece com paixão, paciência e perseverança, e com o tempo você poderá construir uma carreira sólida no desenvolvimento web.
+            </p>
+        </article>
+        <article class="atencao">
+            <h2>
+                Atenção
+            </h2>
+            <p>
+                Todas as informações presentes nesse site foram extraídas do CHAT GPT, fui o responsável somente pela edição e adaptação dos conteúdos aqui presentes.
+            </p>
+        </article>
+        <footer class="footer">
+            <p>Douglas Silva Santana, última atualização 10/07/2023</p>
+        </footer>
+    </section>
 </body>
 </html>
