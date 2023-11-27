@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Oswald:wght@200;500&display=swap');
+
+body{
+    background-image: linear-gradient(to bottom, #122948, #1F5085, #21629C, #42A0C4, #96A7C0);
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-size: 1.2rem;
+}
+article{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    grid-template-areas: 
+    'h1 h1'
+    'txt gif'
+    'link gif';
+    background-color: rgba(245, 245, 220, 0.575);
+    border-radius: 10px;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: justify;
+    box-shadow:  var(--boxshadow);
+    margin-top: 40px;
+    padding: 10px;
+}
+p, h1{
+    margin: 0px 15px 20px 15px;
+    font-family: 'Oswald', sans-serif;
+}
+article p a{
+    text-decoration: none;
+    color: black;
+}
+article p a:hover{
+    text-decoration: underline;
+}
+img{
+    object-fit: contain;
+    border-radius: 10px;
+}
+h1{
+    grid-area: h1;
+    text-align: center;
+    font-size: 30px;
+}
+#txt{
+    grid-area: txt;
+}
+#gif{
+    grid-area: gif;
+}
+#link{
+    grid-area: link;
+}
+@media screen and (max-width: 1228px) {
+    article{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        width: fit-content;
+    }
+}
